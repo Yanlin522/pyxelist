@@ -3,13 +3,6 @@ Name: pyxelist
 version: NV0.2
 """""" ^ info ^ """
 
-""" v README v """"""
-Reading the version:
-> first letter: [P]rototype/[L]aunched/[N]ot shared
-> second letter: [V]ersion
-> the rest: version(int).updates(int)
-"""""" ^ README ^ """
-
 """ v CODE v """
 class pyxelist:
     import turtle
