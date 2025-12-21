@@ -1,40 +1,11 @@
 """ v info v """"""
 Name: pyxelist
-version: NV0.1
+version: V0.1
 """""" ^ info ^ """
 
 """ v setup v """
 # Nothing yet
 """ ^ setup ^ """
-
-""" v README v """"""
-Object creation:
-> example starting: Art = [['#======','#000000'],['#000000','#======']]
-> example object: thing = pyxel(0,0,Art,5,type='solid',width='auto',height='auto')
-> positioning: the first two reaspond to `xpos` and `ypos` the x and y of the shape
-> drawing and size of drawing: the `Art,5,` part is the drawing and the scale of which it should be drawn
-> drawing type: type is either 'solid' or 'animated', selecting animated will put the `frame=` in `thing.draw(frame='use list or dict')`
-> sizing: an extra feature, no not the 'auto', you can basically under scall or over scall to your likings
-Basic usage:
-> step 0, create the objects art: square_art = [['#000000','#000000'],['#000000','#000000'],['#000000','#000000']] # can also just jam it in the code
-> step 1, create object: square = pyxel(0,0,square_art,1) # You can add in `width=,height=` if needed, but will set it auto matically
-> step 2, draw the object: square.draw()
-> Tip 1: '#======' is taken as an empty space
-Movement:
-> Moving the object: square.move('both',(10,-10))
-> Teleporting the object: square.set('x',0)
-> Tip 1: 'both' needs a (int,int) however 'x' or 'y' needs just one int
-> Tip 2: you can change any self.var by self.var=what_you_need, but that's boring
-Animations:
-> step 0, create the art: square_loading_screen_art = [[['#======','#======'],['#======','#000000']],[['#======','#======'],['#000000','#======']],[['#000000','#======'],['#======','#======']],[['#======','#000000'],['#======','#======']]]
-> step 1, create object: square_loading_screen = pyxel(0,0,square_loading_screen_art,10,type='animated')
-> step 2, draw the frame you want squar_loading_screen.draw(2)
-> Tip 1: a dict may work better example: `{'this':data,2:data,'that':data}` but it's no different
-Reading the version:
-> first letter: [P]rototype/[L]aunched/[N]ot shared
-> second letter: [V]ersion
-> the rest: version(int).updates(int)
-"""""" ^ README ^ """
 
 """ v CODE v """
 class pyxelist:
