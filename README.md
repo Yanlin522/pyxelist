@@ -20,4 +20,4 @@ It allows you to display 2D grids, move them around, and even handle simple fram
 You can install PyxelList (once it’s published on PyPI) using:
 
 ```bash
-pip install pyxelist
+pip install pyxelist==0.3.0
